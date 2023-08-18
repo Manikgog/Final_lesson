@@ -9,7 +9,12 @@ class EmployeeBook
 	std::vector<Employee*> book_;
 
 public:
-	void AddEmployee(const std::string& fio, const std::string& department, float salary);
+
+	~EmployeeBook();
+
+	void AddEmployee(const std::string& fio, const std::string& department, float salary, int id);
+
+	void PrintBook();
 
 
 };
